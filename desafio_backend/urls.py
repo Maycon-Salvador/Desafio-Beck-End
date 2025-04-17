@@ -22,7 +22,7 @@ router = routers.DefaultRouter()
 router.register(r"roads", views.RoadViewSet)
 router.register(r"status", views.StatusViewSet)
 # add new code below
-
+router.register(r"occurrences", views.OccurrenceViewSet)
 # add new code above
 
 urlpatterns = [

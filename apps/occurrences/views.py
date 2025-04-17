@@ -2,8 +2,8 @@ from django.shortcuts import render
 
 from rest_framework import viewsets
 from rest_framework import permissions
-from .serializers import RoadSerializer, StatusSerializer
-from .models import Road, Status
+from .serializers import RoadSerializer, StatusSerializer, OccurrenceSerializer
+from .models import Road, Status, Occurrence
 
 
 class RoadViewSet(viewsets.ModelViewSet):
@@ -27,3 +27,8 @@ class StatusViewSet(viewsets.ModelViewSet):
 
 
 # add new code below
+
+class OccurrenceViewSet(viewsets.ModelViewSet):
+    
+    queryset = Occurrence.objects.all().order_by("id")
+    serializer_class = OccurrenceSerializer
