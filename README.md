@@ -78,4 +78,4 @@ python manage.py runserver
 
 ## Autor
 
-Desenvolvido por Maycon Salvador – desafio técnico Kartado 🚀
+Desenvolvido por Maycon Salvador – desafio técnico Kartado
